@@ -7,7 +7,7 @@ public class CartPage {
 
     private WebDriver driver;
 
-    // SELECTORS
+
     private By backpackProduct =
             By.xpath("//div[@class='inventory_item_name' and text()='Sauce Labs Backpack']");
 
@@ -17,7 +17,7 @@ public class CartPage {
     private By checkoutButton =
             By.id("checkout");
 
-    // CONSTRUCTOR
+
     public CartPage(WebDriver driver) {
         this.driver = driver;
     }

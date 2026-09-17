@@ -12,21 +12,22 @@ public class BaseTest {
 
     protected LoginPage loginPage;
 
+
+
     @BeforeEach
     void setUp() {
 
-        // Abrir Chrome
+
         driver = new ChromeDriver();
 
         driver.manage().window().maximize();
 
-        // Abrir SauceDemo
+
         driver.get("https://www.saucedemo.com/");
 
-        // Crear Page Object
+
         loginPage = new LoginPage(driver);
 
-        // PRECONDICIÓN
         loginPage.login(
                 "standard_user",
                 "secret_sauce"

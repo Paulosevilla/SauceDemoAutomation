@@ -7,7 +7,7 @@ public class CheckoutPage {
 
     private WebDriver driver;
 
-    // SELECTORS
+
     private By firstNameInput =
             By.id("first-name");
 

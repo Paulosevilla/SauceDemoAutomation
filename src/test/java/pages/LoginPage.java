@@ -7,17 +7,17 @@ public class LoginPage {
 
     private WebDriver driver;
 
-    // SELECTORS
+
     private By usernameInput = By.id("user-name");
     private By passwordInput = By.id("password");
     private By loginButton = By.id("login-button");
 
-    // CONSTRUCTOR
+
     public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    // ACCIONES
+
     public void ingresarUsuario(String usuario) {
         driver.findElement(usernameInput).sendKeys(usuario);
     }
